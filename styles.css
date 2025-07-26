@@ -1,116 +1,45 @@
 body {
   margin: 0;
-  font-family: 'Bangers', cursive;
-  background-color: #cce0f5;
-  color: #000;
+  padding: 0;
+  background-color: #045b6b;
+  font-family: 'Just Me Again Down Here', 'Windsor', Arial, sans-serif;
+  color: #fff;
   text-align: center;
 }
 
-.banner {
-  width: 100%;
+header {
+  padding-top: 1.5rem;
+}
+
+.ribbon {
+  max-width: 350px;
+  width: 90%;
   height: auto;
-  max-height: 250px;
-  object-fit: contain;
-  display: block;
-  margin-bottom: 1rem;
 }
 
 .description {
-  font-size: 1.1rem;
-  max-width: 750px;
-  margin: 0 auto 2rem;
-  padding: 0 1rem;
-  line-height: 1.7rem;
+  font-size: clamp(1rem, 2vw, 1.4rem);
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem;
+  color: #fff;
 }
 
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1.5rem;
-  padding: 1rem;
-}
-
-.card {
-  width: 220px;
-  height: 330px;
-  perspective: 1000px;
-}
-
-.card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  transition: transform 0.7s;
-  transform-style: preserve-3d;
-}
-
-.card:hover .card-inner {
-  transform: rotateY(180deg);
-}
-
-.card-front,
-.card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-  border-radius: 12px;
-  overflow: hidden;
-}
-
-.card-front img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.card-back {
-  background-color: #fff8cc;
-  transform: rotateY(180deg);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem;
-  font-size: 0.9rem;
-  line-height: 1.4rem;
-  color: #000;
-}
-
-footer {
-  background-color: #fff;
-  padding: 2rem 1rem;
-  font-size: 0.95rem;
-  color: #333;
-}
-
-footer a {
-  color: #0066cc;
-  text-decoration: none;
-}
-
-footer a:hover {
+.description a {
+  color: #add8ff;
   text-decoration: underline;
 }
 
-.disclaimer {
-  margin-bottom: 0.5rem;
+footer {
+  background-color: #ffffff;
+  color: #333;
+  font-size: 0.9rem;
+  padding: 2rem 1rem;
+  line-height: 1.5;
 }
 
-/* Responsive Fixes */
-@media (max-width: 600px) {
-  .description {
-    font-size: 1rem;
-    padding: 0 1.2rem;
-  }
-
-  .card {
-    width: 180px;
-    height: 270px;
-  }
-
-  .card-back {
-    font-size: 0.85rem;
-    line-height: 1.3rem;
-  }
+footer a {
+  color: #007bff;
+  text-decoration: none;
 }
