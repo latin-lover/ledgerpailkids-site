@@ -1,45 +1,117 @@
 body {
   margin: 0;
-  padding: 0;
-  background-color: #045b6b;
-  font-family: 'Just Me Again Down Here', 'Windsor', Arial, sans-serif;
-  color: #fff;
+  font-family: 'Luckiest Guy', cursive;
+  background-color: #cce0f5;
+  color: #000;
   text-align: center;
 }
 
-header {
-  padding-top: 1.5rem;
+.banner {
+  width: 100%;
+  max-height: 240px;
+  object-fit: contain;
+  display: block;
+  margin-top: 1rem;
 }
 
-.ribbon {
-  max-width: 350px;
-  width: 90%;
-  height: auto;
+header {
+  margin-bottom: 0;
 }
 
 .description {
-  font-size: clamp(1rem, 2vw, 1.4rem);
-  line-height: 1.6;
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 1.5rem 1rem;
-  color: #fff;
+  font-size: 1rem;
+  max-width: 750px;
+  margin: 1.5rem auto 2rem;
+  padding: 0 1rem;
 }
 
-.description a {
-  color: #add8ff;
-  text-decoration: underline;
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 2rem 1rem;
+}
+
+.card {
+  width: 220px;
+  height: 330px;
+  perspective: 1000px;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.7s;
+  transform-style: preserve-3d;
+}
+
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.card-front img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-back {
+  background-color: #fff8cc;
+  transform: rotateY(180deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  font-size: 0.85rem;
+  line-height: 1.3rem;
+  color: #000;
 }
 
 footer {
-  background-color: #ffffff;
-  color: #333;
-  font-size: 0.9rem;
+  background-color: #fff;
   padding: 2rem 1rem;
-  line-height: 1.5;
+  font-size: 0.9rem;
+  color: #333;
 }
 
 footer a {
-  color: #007bff;
+  color: #0066cc;
   text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.disclaimer {
+  margin-bottom: 0.5rem;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 600px) {
+  .description {
+    font-size: 0.95rem;
+    padding: 0 1rem;
+  }
+
+  .card {
+    width: 180px;
+    height: 270px;
+  }
+
+  .card-back {
+    font-size: 0.75rem;
+  }
 }
