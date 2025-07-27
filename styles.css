@@ -1,21 +1,21 @@
 body {
   margin: 0;
-  font-family: 'Rubik Mono One', sans-serif;
-  background-color: #006778;
+  font-family: 'Cooper Black', sans-serif;
+  background-color: #00687b;
   color: white;
 }
 
-.banner {
+.header .banner {
   width: 100%;
   display: block;
 }
 
 .description {
   text-align: center;
-  padding: 30px;
   max-width: 900px;
-  margin: 0 auto;
-  font-size: 0.9rem;
+  margin: 30px auto;
+  padding: 0 15px;
+  font-size: 1.1rem;
   line-height: 1.6;
 }
 
@@ -23,33 +23,31 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 40px;
-  padding: 40px;
+  padding: 20px;
+  gap: 20px;
 }
 
-.flip-card {
-  background-color: transparent;
-  width: 220px;
-  height: 340px;
+.card {
+  width: 230px;
+  height: 330px;
   perspective: 1000px;
+  cursor: pointer;
 }
 
-.flip-card-inner {
+.card-inner {
   position: relative;
   width: 100%;
   height: 100%;
-  text-align: center;
   transition: transform 0.7s;
   transform-style: preserve-3d;
 }
 
-.flip-card:hover .flip-card-inner,
-.flip-card:active .flip-card-inner {
+.card:hover .card-inner,
+.card.flipped .card-inner {
   transform: rotateY(180deg);
 }
 
-.flip-card-front,
-.flip-card-back {
+.card-front, .card-back {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -58,57 +56,35 @@ body {
   overflow: hidden;
 }
 
-.flip-card-front {
-  background-color: #fff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
-}
-
-.flip-card-front img {
+.card-front img,
+.card-back img {
   width: 100%;
-  height: auto;
-  border-bottom: 2px solid #000;
+  height: 100%;
+  object-fit: cover;
 }
 
-.card-name {
-  font-size: 0.95rem;
-  color: #000;
-  background: #f7d87c;
-  margin: 0;
-  padding: 6px 0;
-}
-
-.flip-card-back {
-  background-color: #fff4d6;
-  color: #000;
+.card-back {
   transform: rotateY(180deg);
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.75rem;
-  line-height: 1.4;
 }
 
-footer {
-  text-align: center;
-  padding: 30px;
-  background: white;
+.footer {
+  background-color: white;
   color: black;
+  text-align: center;
+  padding: 30px 15px;
+  font-size: 0.9rem;
+  font-family: 'Cooper Black', sans-serif;
 }
 
-.footer-text {
-  font-size: 0.8rem;
-  margin-bottom: 5px;
-}
-
-.social {
-  font-size: 1rem;
-}
-
-.social span {
-  color: #006778;
+.footer a {
+  color: #3498db;
+  text-decoration: none;
   font-weight: bold;
+}
+
+/* Mobile Card Flip Fix */
+@media (hover: none) {
+  .card:active .card-inner {
+    transform: rotateY(180deg);
+  }
 }
