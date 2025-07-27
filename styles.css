@@ -118,4 +118,11 @@ footer a:hover {
   .card-back {
     font-size: 0.75rem;
   }
+  
+.divider {
+  width: 100%;
+  height: 80px;
+  background: url('divider.png') repeat-x center;
+  background-size: contain;
+  margin: -40px 0;
 }
