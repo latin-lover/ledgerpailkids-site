@@ -1,42 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Ledger Pail Kids</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" href="favicon.jpg" type="image/jpeg" />
-  <link href="https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap" rel="stylesheet">
-</head>
-<body>
-  <header>
-    <img src="banner.jpg" alt="Ledger Pail Kids Banner" class="banner"/>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ledger Pail Kids NFT Collection</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <img src="banner.jpg" alt="Ledger Pail Kids Banner" class="banner" />
+    </header>
 
-  <main>
-    <section class="about">
+    <main>
       <p class="description">
         A crypto degen parody collection — where satire meets JPEGs. Each NFT in the collection is uniquely designed with intention — blending parody, creativity, and collectible appeal. XRPL users who mint via xrp.cafe will be airdropped our limited-supply meme token upon launch, post mint. There is no official roadmap or guarantees — just organic growth, community vibes, and perhaps... something slow-cooking behind the scenes.
       </p>
-    </section>
 
-    <section class="gallery">
-      <div class="card"><img src="peter_peak.jpg" alt="Peter Peak" /></div>
-      <div class="card"><img src="bailed_out_bitboy.jpg" alt="Bailed-Out Bitboy" /></div>
-      <div class="card"><img src="acquired_arnold.jpg" alt="Acquired Arnold" /></div>
-      <div class="card"><img src="doomed_dylan.jpg" alt="Doomed Dylan" /></div>
-      <div class="card"><img src="milady_motion.jpg" alt="Milady Motion" /></div>
-      <div class="card"><img src="alpha_andy.jpg" alt="Alpha Andy" /></div>
-    </section>
-  </main>
+      <section class="card-grid">
+        <!-- Repeat this card structure for each NFT -->
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="cards/peter_peak.png" alt="Peter Peak" />
+              <p class="card-name">PETER PEAK</p>
+            </div>
+            <div class="flip-card-back">
+              <p>Web-slingin’ XRP maxi who traps meme coins in ledgers and rugpulls in his sleep. Hasn't touched fiat since 2022 and still believes “with great power comes great TPS.”</p>
+            </div>
+          </div>
+        </div>
 
-  <footer>
-    <p class="disclaimer">
-      This project is a parody and is not affiliated with Topps or Garbage Pail Kids®. For entertainment purposes only. NFA. Always do your own research.
-    </p>
-    <p>
-      Follow us on <a href="https://x.com/ledgerpailkids" target="_blank">X, @ledgerpailkids</a>
-    </p>
-  </footer>
-</body>
+        <!-- Add other cards here... -->
+      </section>
+    </main>
+
+    <footer>
+      <p class="footer-text">
+        This project is a parody and is not affiliated with Topps or Garbage Pail Kids®. For entertainment purposes only. NFA. Always do your own research.
+      </p>
+      <p class="social">Follow us on X, <span>@ledgerpailkids</span></p>
+    </footer>
+  </body>
 </html>
