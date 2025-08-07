@@ -160,19 +160,19 @@ footer a:hover {
 }
 
 .faq-container {
-  padding: 40px 20px;
+  padding: 2rem 1.5rem; /* instead of 4rem+ */
+  border-radius: 20px;
+  background-color: #fff8e1; /* This cream is fine if you want contrast from the blue */
   max-width: 800px;
   margin: 0 auto;
-  background-color: #fff8e7;
-  border-radius: 20px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
 .faq-heading {
-  font-size: 2rem;
-  text-align: center;
-  margin-bottom: 25px;
+  font-size: 2.2rem;
   font-weight: bold;
+  color: #ffffff; /* Clean white */
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
 .faq-item {
