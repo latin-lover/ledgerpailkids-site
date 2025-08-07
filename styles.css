@@ -43,7 +43,7 @@ main {
   justify-content: center;
   gap: 1.5rem;
   padding: 0 1rem;
-  margin-top: -1rem;  /* pull closer to mint button */
+  margin-top: -1.5rem;  /* pull closer to mint button */
   margin-bottom: 4rem;
 }
 
