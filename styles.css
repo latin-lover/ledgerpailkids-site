@@ -43,9 +43,10 @@ main {
   justify-content: center;
   gap: 1.5rem;
   padding: 0 1rem;
-  margin-top: 1.5rem;  /* closer to the button */
-  margin-bottom: 4rem; /* more space before FAQ */
+  margin-top: -1rem;  /* pull closer to mint button */
+  margin-bottom: 4rem;
 }
+
 
 .card {
   width: 220px;
