@@ -167,7 +167,7 @@ footer a:hover {
   border-radius: 20px;
   background-color: #fff8e1;
   max-width: 800px;
-  margin: -4rem auto 4rem auto; /* Top = 4rem, Bottom = 3rem */
+  margin: -3rem auto 4rem auto; 
 }
 
 .faq-heading {
