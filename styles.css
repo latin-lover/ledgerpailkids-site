@@ -43,7 +43,9 @@ main {
   justify-content: center;
   gap: 1.5rem;
   padding: 2rem 1rem;
-  margin: 4rem auto; /* adjust this value as needed */
+
+  margin-top: 3rem;  /* adjust spacing from the Mint button */
+  margin-bottom: 3.5rem;  /* adjust spacing from FAQ */
 }
 
 .card {
