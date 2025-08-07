@@ -42,10 +42,9 @@ main {
   flex-wrap: wrap;
   justify-content: center;
   gap: 1.5rem;
-  padding: 2rem 1rem;
-
-  margin-top: 3rem;  /* adjust spacing from the Mint button */
-  margin-bottom: 3.5rem;  /* adjust spacing from FAQ */
+  padding: 0 1rem;
+  margin-top: 1.5rem;  /* closer to the button */
+  margin-bottom: 4rem; /* more space before FAQ */
 }
 
 .card {
