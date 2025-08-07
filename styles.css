@@ -43,6 +43,7 @@ main {
   justify-content: center;
   gap: 1.5rem;
   padding: 2rem 1rem;
+  margin: 4rem auto; /* adjust this value as needed */
 }
 
 .card {
