@@ -287,3 +287,70 @@ footer a:hover {
 @media (max-width: 520px) {
   .tokenomics-grid { grid-template-columns: 1fr; }
 }
+
+/* Tokenomics & Scarcity unified styling with fade-in */
+.tokenomics.fade-in.delay-5,
+.scarcity.fade-in.delay-6 {
+  padding: 2rem 1.25rem;
+  border-radius: 24px;
+  background: #fff8e1;
+  max-width: 940px;
+  margin: 2.75rem auto 3.5rem;
+  color: #222;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+/* Headings */
+.tokenomics.fade-in.delay-5 h2,
+.scarcity.fade-in.delay-6 h2 {
+  font-size: 2rem;
+  margin: 0 0 0.25rem;
+  color: #FFCC00; /* Brand yellow */
+}
+
+/* Paragraphs */
+.tokenomics.fade-in.delay-5 p,
+.scarcity.fade-in.delay-6 p {
+  color: #333;
+}
+
+/* Lists cleanup */
+.tokenomics.fade-in.delay-5 ul,
+.scarcity.fade-in.delay-6 ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+}
+
+.tokenomics.fade-in.delay-5 li,
+.scarcity.fade-in.delay-6 li {
+  background: #fffdfa;
+  border: 2px solid #FFCC00;
+  border-radius: 16px;
+  padding: 14px 12px;
+  margin: 10px 0;
+  color: #222;
+  text-align: left;
+  line-height: 1.45;
+}
+
+/* Future levers heading in tokenomics */
+.tokenomics.fade-in.delay-5 h3 {
+  margin-top: 2rem;
+  font-size: 1.4rem;
+  color: #00637b; /* Site teal */
+}
+
+/* Smaller screens */
+@media (max-width: 520px) {
+  .tokenomics.fade-in.delay-5,
+  .scarcity.fade-in.delay-6 {
+    padding: 1.25rem 0.9rem;
+  }
+
+  .tokenomics.fade-in.delay-5 h2,
+  .scarcity.fade-in.delay-6 h2 {
+    font-size: 1.6rem;
+  }
+}
