@@ -292,8 +292,9 @@ footer a:hover {
 .tokenomics.fade-in.delay-5,
 .scarcity.fade-in.delay-6 {
   padding: 2rem 1.25rem;
-  border-radius: 24px;
-  background: #fff8e1;
+  border-radius: 16px;
+  background: #fffdfa;            /* white card */
+  border: 2px solid #FFCC00;      /* mustard border */
   max-width: 940px;
   margin: 2.75rem auto 3.5rem;
   color: #222;
